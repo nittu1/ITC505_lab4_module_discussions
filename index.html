@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated SVG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animate SVG</h1>
+        <svg id="animatedSVG" width="200" height="200">
+            <!-- Define your SVG content here -->
+            <circle cx="100" cy="100" r="50" fill="blue">
+                <animate attributeName="r" from="50" to="100" dur="3s" repeatCount="indefinite" />
+            </circle>
+        </svg>
+    </div>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
